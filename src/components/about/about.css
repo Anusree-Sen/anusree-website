@@ -1,105 +1,102 @@
-.about__container{
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+/* about.css */
+
+/* Container for About Section */
+.container.about__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem 0; /* Add some padding for better spacing */
 }
 
-.about__me{
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
-    display: grid;
-    place-items: center;
+/* Styling the content area */
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%; /* Ensure full width */
 }
 
-.about__me-image {
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
-}
-
-.about__me-image:hover {
-    transform: rotate(0deg);
-}
-
+/* About Cards Section */
 .about__cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex: 1 1 50%;
 }
 
 .about__card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
-    border-radius: 1rem;
-    padding: 2rem;
-    text-align: center;
-    transition: var(--transition);
+  background: var(--color-bg-variant);
+  border: 2px solid var(--color-primary-variant);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px; /* Ensure minimum width for each card */
 }
 
+/* Hover effect for cards */
 .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Icon inside each card */
 .about__icon {
-    color: var(--color-primary);
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 
+/* Typography adjustments for card headings */
 .about__card h5 {
-    font-size: 0.95rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
 }
 
-.about__card small {
-    font-size: 0.7rem;
-    color: var(--color-light);
+.about__card ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.about__content p {
-    margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+.about__card ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-light);
 }
 
-/* ============ MEDIA QUERIES (MEDIUM DEVICES) ============ */
-@media screen and (max-width: 1024px) {
-    .about__container {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .about__me {
-        width: 50%;
-        margin: 2rem auto 4rem;
-    }
-
-    .about__content p {
-        margin: 1rem 0 1.5rem;
-    }
+/* General button styling */
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  margin-top: 1.5rem;
 }
 
-/* ============ MEDIA QUERIES (SMALL DEVICES) ============ */
-@media screen and (max-width: 600px) {
-    .about__me {
-        width: 65%;
-        margin: 0 auto 3rem;
-    }
+.btn:hover {
+  background-color: var(--color-primary-variant);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-    .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
+/* Mobile Responsive Styling */
+@media (max-width: 768px) {
+  .about__cards {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
 
-    .about__content {
-        text-align: center;
-    }
-
-    .about__content p {
-        margin: 1.5rem 0;
-    }
-
+  .about__card {
+    min-width: 100%; /* Cards take full width on mobile */
+  }
 }

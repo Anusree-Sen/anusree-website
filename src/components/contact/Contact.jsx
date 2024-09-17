@@ -1,17 +1,16 @@
-import React from 'react'
-import './contact.css'
+import emailjs from 'emailjs-com'
+import React, { useRef } from 'react'
 import { AiOutlineMail } from 'react-icons/ai'
-import { FaFacebookMessenger } from 'react-icons/fa'
 import { BsWhatsapp } from 'react-icons/bs'
-import { useRef } from 'react';
-import emailjs from 'emailjs-com';
+import { FaFacebookMessenger } from 'react-icons/fa'
+import './contact.css'
 
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_izxjzpp', 'template_6l077t8', form.current, 'edVXDrAZkIGb00d1s');
+    emailjs.sendForm('service_cg8icx9', 'template_h90jppk', form.current, 'lh7CtAU5LUHdVGK6o');
     e.target.reset();
   };
   return (
@@ -24,22 +23,22 @@ const Contact = () => {
           <article className='contact__option'>
             <AiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
-            <h5>souvik.piyal@gmail.com</h5>
-            <a href="mailto:souvik.piyal@gmail.com" target='_blank'>Send a message</a>
+            <h5>anusreesen.as24@gmail.com</h5>
+            <a href="mailto:anusreesen.as24@gmail.com" target='_blank'>Send a message</a>
           </article>
 
           <article className='contact__option'>
             <FaFacebookMessenger className='contact__option-icon'/>
             <h4>Messenger</h4>
-            <h5>Souvik Das</h5>
-            <a href="https://m.me/souvik.piyal" target='_blank'>Send a message</a>
+            <h5>Anusree Sen</h5>
+            <a href="https://m.me/id=100022632162477" target='_blank'>Send a message</a>
           </article>
 
           <article className='contact__option'>
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
-            <h5>+8801760449363</h5>
-            <a href="https://api.whatsap.com/send?phone=+8801760449363" target='_blank'>Send a message</a>
+            <h5>+8801733464643</h5>
+            <a href="https://api.whatsapp.com/send?phone=+8801733464643" target='_blank'>Send a message</a>
           </article>
         </div>
 

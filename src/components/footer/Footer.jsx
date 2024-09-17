@@ -1,13 +1,12 @@
-import React from 'react'
-import './footer.css'
-import { FaFacebookF } from 'react-icons/fa'
-import { FiInstagram } from 'react-icons/fi'
-import { IoLogoTwitter } from 'react-icons/io'
+import React from 'react';
+import './footer.css';
+import { FaFacebookF, FaLinkedin, FaResearchgate } from 'react-icons/fa';
+import { FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className='footer__logo'>Souvik's Website</a>
+      <a href="#" className='footer__logo'>Anusree's Website</a>
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -19,16 +18,17 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://facebook.com"><FaFacebookF /></a>
+        <a href="https://instagram.com"><FiInstagram /></a>
+        <a href="https://linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://www.researchgate.net/profile/your-researchgate-id" target="_blank" rel="noopener noreferrer"><FaResearchgate /></a>
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Souvik Das. All rights reserved.</small>
+        <small>&copy; Anusree Sen. All rights reserved.</small>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
