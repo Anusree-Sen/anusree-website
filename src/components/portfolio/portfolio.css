@@ -1,97 +1,104 @@
-/* portfolio.css */
+/* Animation effect restored without zooming */
 
 .container.portfolio__container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .portfolio__section {
-    margin-bottom: 2rem;
-  }
-  
-  .portfolio__section-title {
-    text-align: center;
-    font-weight: bold;
-    color: var(--color-dark);
-    margin-bottom: 1rem;
-  }
-  
-  .portfolio__items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.portfolio__section {
+  margin-bottom: 2rem;
+}
+
+.portfolio__section-title {
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+
+.portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  border: 1px solid var(--color-primary-variant);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: calc(33% - 1.5rem);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Animation effect without zooming */
+.portfolio__item:hover {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Apply shadow on hover */
+  transform: translateY(-5px); /* Lift the card without zoom */
+}
+
+.portfolio__item-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__item-summary,
+.portfolio__item-description {
+  font-size: 0.9rem;
+  color: var(--color-light);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio__item-cta {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.portfolio__item-cta a {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.portfolio__item-cta a:hover {
+  background-color: var(--color-primary-variant);
+  color: var(--color-light);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-variant);
+}
+
+.btn:hover {
+  background-color: var(--color-primary-variant);
+}
+
+@media screen and (max-width: 1024px) {
   .portfolio__item {
-    background: var(--color-bg-variant);
-    border: 1px solid var(--color-primary-variant);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    text-align: center;
-    width: calc(33% - 1.5rem); /* Adjust width based on number of items per row */
-    position: relative;
+    width: calc(50% - 1.5rem);
   }
-  
-  .portfolio__item-title {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio__item {
+    width: calc(100% - 1.5rem);
   }
-  
-  .portfolio__item-summary, .portfolio__item-description {
-    font-size: 0.9rem;
-    color: var(--color-light);
-    margin-bottom: 0.5rem;
-  }
-  
-  .portfolio__item-cta {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    flex-wrap: wrap;
-  }
-  
-  .portfolio__item-cta a {
-    color: white; /* Set icon color to white */
-    font-size: 1.5rem; /* Keep the icon size consistent */
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .portfolio__item-cta a:hover {
-    background-color: var(--color-primary-variant); /* Background color on hover */
-    color: var(--color-light); /* Change text color on hover */
-  }
-  
-  .btn {
-    background-color: var(--color-primary);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-primary {
-    background-color: var(--color-primary-variant);
-  }
-  
-  .btn:hover {
-    background-color: var(--color-primary-variant);
-  }
-  
-  @media screen and (max-width: 1024px) {
-    .portfolio__item {
-      width: calc(50% - 1.5rem); /* Adjust for 2 items per row */
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .portfolio__item {
-      width: calc(100% - 1.5rem); /* Adjust for 1 item per row */
-    }
-  }
-  
+}

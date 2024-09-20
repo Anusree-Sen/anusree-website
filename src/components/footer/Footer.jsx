@@ -18,10 +18,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com"><FaFacebookF /></a>
-        <a href="https://instagram.com"><FiInstagram /></a>
-        <a href="https://linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://www.researchgate.net/profile/your-researchgate-id" target="_blank" rel="noopener noreferrer"><FaResearchgate /></a>
+        <a href="https://facebook.com/id=100022632162477"><FaFacebookF /></a>
+        <a href="https://www.instagram.com/anusree_sen/"><FiInstagram /></a>
+        <a href="https://www.linkedin.com/in/anusree-sen-55b308224/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
+        <a href="https://www.researchgate.net/profile/Anusree-Sen-2" target="_blank" rel="noopener noreferrer"><FaResearchgate /></a>
       </div>
 
       <div className="footer__copyright">

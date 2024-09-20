@@ -42,9 +42,10 @@ const About = () => {
               <FaAward className='about__icon' />
               <h5>Achievements & Awards</h5>
               <ul>
-                <li>Best Paper Award, XYZ Conference</li>
-                <li>Top Graduate, BUET</li>
-                <li>Outstanding Performance Award, REB</li>
+                <li>University Merit Scholarship, 3 times.</li>
+                <li>Dean's List, 3 out of 4 academic years.</li>
+                <li>Board Talent Pool Scholarship, Dhaka Board.</li>
+                <li>Among top graduates(CGPA=3.80)</li>
               </ul>
             </article>
 
@@ -53,15 +54,18 @@ const About = () => {
               <MdVerified className='about__icon' />
               <h5>Certifications & Courses</h5>
               <ul>
-                <li>Certified Supply Chain Analyst (CSCA)™</li>
-                <li>Advanced Thermodynamics Course, MITx</li>
-                <li>Control Systems Design Workshop</li>
+                <li> Certified Supply Chain Analyst (CSCA)™</li>
+                <li> Applied Engineering Mathematics Course, BUET(4.00/4.00)</li>
+                <li> Control Engineering Course, BUET(4.00/4.00)</li>
+                <li> Heat Transfer Equipment Design Course, BUET(4.00/4.00)</li>
               </ul>
             </article>
           </div>
 
           <p>
-            I am Anusree Sen, a Mechanical Engineer with a focus on renewable energy and system design. I hold a degree from BUET and am currently an Assistant Engineer at the Bangladesh Rural Electrification Board. I am also a Certified Supply Chain Analyst (CSCA)™. Explore my work and creative projects here.
+          I’m Anusree Sen, a Mechanical Engineer with a degree from BUET, where I proudly graduated with a cumulative GPA of 3.80/4.00, including a 3.97 in my final semester and 3.98 in the previous one. I currently work as an Assistant Engineer at the Bangladesh Rural Electrification Board. My expertise lies in innovative renewable energy solutions and advanced system design, as exemplified by my work on a CSP-driven cogeneration cycle. As a Certified Supply Chain Analyst (CSCA)™, I am dedicated to improving energy efficiency and optimizing supply chain processes. Alongside my engineering career, I have a passion for the arts, creating compelling graphics and artwork. Explore my site to see how my research, projects, and creative ventures are shaping the future.
+
+
           </p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './portfolio.css';
-import { FaResearchgate, FaVideo, FaBehance } from 'react-icons/fa';
+import { FaResearchgate, FaBehance, FaYoutube } from 'react-icons/fa';
 
 // Importing images
 import ResearchImg1 from '../../assets/PID.png';
@@ -49,28 +49,28 @@ const data = {
       title: "Auto Temperature Detector & Entrance Monitoring System",
       description: "Developed a system for temperature detection and entrance monitoring to ensure COVID-19 safety.",
       researchgate: 'https://www.researchgate.net/publication/376893638_Auto_Temperature_Detector_and_Monitoring_Human_Entrance_For_maintaining_Covid-19_Safety',
-      video: 'https://www.youtube.com/watch?v=your-video'
+      video: 'https://www.facebook.com/share/QeLVDFHrhd8biDfX/?mibextid=WC7FNe'
     },
     {
       id: 2,
       image: ProjectImg2,
       title: "Shell and Tube Heat Exchanger",
       description: "Designed and manufactured a shell and tube heat exchanger, applying knowledge in heat transfer and thermodynamics.",
-      researchgate: 'https://www.researchgate.net/publication/376889302_Design_of_Shell_and_Tube_Heat_Exchanger',
-      video: 'https://www.youtube.com/watch?v=your-video'
+      researchgate: 'https://www.researchgate.net/publication/376889302_Design_of_Shell_and_Tube_Heat_Exchanger'
+      // No video icon here
     }
   ],
   artworks: [
     {
       id: 1,
-      image: ArtworkImg1, // Add artwork image
+      image: ArtworkImg1,
       title: "Artistic Work 1",
       description: "A creative exploration of abstract forms using color theory and geometric design.",
       link: 'https://www.behance.net/anusreesen'
     },
     {
       id: 2,
-      image: ArtworkImg2, // Add artwork image
+      image: ArtworkImg2,
       title: "Artistic Work 2",
       description: "An experiment in visual storytelling through modern digital illustration techniques.",
       link: 'https://www.behance.net/anusreesen'
@@ -89,7 +89,7 @@ const Portfolio = () => {
         <div className="portfolio__section">
           <h3 className="portfolio__section-title">Research Works</h3>
           <div className="portfolio__items">
-            {data.researchWorks.map(({id, image, title, summary, doi, journal, researchgate}) => (
+            {data.researchWorks.map(({ id, image, title, summary, doi, journal, researchgate }) => (
               <div key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
@@ -114,7 +114,7 @@ const Portfolio = () => {
         <div className="portfolio__section">
           <h3 className="portfolio__section-title">Projects</h3>
           <div className="portfolio__items">
-            {data.projects.map(({id, image, title, description, researchgate, video}) => (
+            {data.projects.map(({ id, image, title, description, researchgate, video }) => (
               <div key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
@@ -122,12 +122,16 @@ const Portfolio = () => {
                 <h4 className="portfolio__item-title">{title}</h4>
                 <p className="portfolio__item-description">{description}</p>
                 <div className="portfolio__item-cta">
-                  <a href={researchgate} className='btn' target='_blank' rel='noopener noreferrer'>
-                    <FaResearchgate className='portfolio__item-icon' />
-                  </a>
-                  {video && <a href={video} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>
-                    <FaVideo className='portfolio__item-icon' />
-                  </a>}
+                  {video && (
+                    <a href={video} className='btn' target='_blank' rel='noopener noreferrer'>
+                      <FaYoutube className='portfolio__item-icon' />
+                    </a>
+                  )}
+                  {researchgate && (
+                    <a href={researchgate} className='btn' target='_blank' rel='noopener noreferrer'>
+                      <FaResearchgate className='portfolio__item-icon' />
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -138,7 +142,7 @@ const Portfolio = () => {
         <div className="portfolio__section">
           <h3 className="portfolio__section-title">Artworks</h3>
           <div className="portfolio__items">
-            {data.artworks.map(({id, image, title, description, link}) => (
+            {data.artworks.map(({ id, image, title, description, link }) => (
               <div key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
@@ -156,7 +160,7 @@ const Portfolio = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Portfolio;
