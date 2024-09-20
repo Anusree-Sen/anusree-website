@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/anusree-website/static/css/main.19e3613b.css",
-    "main.js": "/anusree-website/static/js/main.acfa594c.js",
+    "main.css": "/anusree-website/static/css/main.66bd01da.css",
+    "main.js": "/anusree-website/static/js/main.a178d231.js",
     "static/media/narir_sopno.png": "/anusree-website/static/media/narir_sopno.a17a5156f13952b3f81f.png",
     "static/media/Anu.png": "/anusree-website/static/media/Anu.404a2b2a35995c61100a.png",
     "static/media/BIDC logo with background.png": "/anusree-website/static/media/BIDC logo with background.b1cfe628aab9d15b4ea3.png",
     "static/media/sustainable.png": "/anusree-website/static/media/sustainable.4fe8d22918a678836a81.png",
     "static/media/temp_detector.png": "/anusree-website/static/media/temp_detector.8f224304dfbc4d294689.png",
     "static/media/shell_tube.png": "/anusree-website/static/media/shell_tube.f7346b3ffe7c3fde9ea4.png",
-    "static/media/Souvik_Resume.pdf": "/anusree-website/static/media/Souvik_Resume.bfa52e7cf058a4661aa4.pdf",
+    "static/media/Anusree_CV.pdf": "/anusree-website/static/media/Anusree_CV.3c92eb5fbcc1b1f9714e.pdf",
     "static/media/Thesis-1.jpg": "/anusree-website/static/media/Thesis-1.2e385f8e7769864ccee8.jpg",
     "static/media/PID.png": "/anusree-website/static/media/PID.9fad062d21b9dca9e1eb.png",
     "index.html": "/anusree-website/index.html",
-    "main.19e3613b.css.map": "/anusree-website/static/css/main.19e3613b.css.map",
-    "main.acfa594c.js.map": "/anusree-website/static/js/main.acfa594c.js.map"
+    "main.66bd01da.css.map": "/anusree-website/static/css/main.66bd01da.css.map",
+    "main.a178d231.js.map": "/anusree-website/static/js/main.a178d231.js.map"
   },
   "entrypoints": [
-    "static/css/main.19e3613b.css",
-    "static/js/main.acfa594c.js"
+    "static/css/main.66bd01da.css",
+    "static/js/main.a178d231.js"
   ]
 }
